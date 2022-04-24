@@ -4,7 +4,7 @@
 
 `npm i` - to install modules
 
-requires:
+### requires:
 file `ip.txt` on main directory with only ip
 
 <h3>npm-scripts:</h3>
@@ -20,7 +20,7 @@ file `ip.txt` on main directory with only ip
 utils.js
 web3.js
 
-more intresting:
+<h4>more intresting:</h4>
 
 deploy.js - `node ./deploy.js --con <ContractName>`
 
