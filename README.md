@@ -7,7 +7,7 @@
 requires:
 file `ip.txt` on main directory with only ip
 
-npm-scripts:
+<h3>npm-scripts:</h3>
 
 `npm run geth-init`
 
@@ -15,7 +15,7 @@ npm-scripts:
 
 `npm run geth-console`
 
-<h6>scripts:</h6>
+<h3>scripts:</h3>
 
 utils.js
 web3.js
