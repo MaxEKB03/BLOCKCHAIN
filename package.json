@@ -6,9 +6,7 @@
 	"scripts": {
 		"geth-console": "cd geth && console.bat",
 		"geth-init": "cd geth && init.bat",
-		"geth-run": "cd geth && run.bat",
-		"deploy": "cd scripts && node deploy.js",
-		"gui": "cd gui && npm run serve"
+		"geth-run": "cd geth && run.bat"
 	},
 	"keywords": [],
 	"author": "",
