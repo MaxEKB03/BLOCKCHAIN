@@ -1,6 +1,6 @@
 # BLOCKCHAIN
 
-Test Project to learn blockchain technology
+### Test Project to learn blockchain technology
 
 `npm i` - to install modules
 
