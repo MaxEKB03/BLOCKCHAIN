@@ -8,14 +8,14 @@ requires:
 file `ip.txt` on main directory with only ip
 
 npm-scripts:
+
 `npm run geth-init`
 
-need account to mine
-`npm run geth-run`
+`npm run geth-run` - need account to mine
 
 `npm run geth-console`
 
-scripts:
+<h6>scripts:</h6>
 
 utils.js
 web3.js
