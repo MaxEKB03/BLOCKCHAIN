@@ -1,0 +1,6 @@
+gui
+bin
+node_modules
+geth/data
+ip.txt
+package-lock.json

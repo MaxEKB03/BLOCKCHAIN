@@ -5,22 +5,34 @@
 `npm i` - to install modules
 
 ### requires:
+
 file `ip.txt` on main directory with only ip
 
-<h3>npm-scripts:</h3>
+### npm-scripts:
 
 `npm run geth-init`
+
+`npm run get-ip` - to create file `ip.txt`
+
+`npm run new-account`
 
 `npm run geth-run` - need account to mine
 
 `npm run geth-console`
 
-<h3>scripts:</h3>
+### scripts
 
-utils.js
-web3.js
+web3.js:
 
-<h4>more intresting:</h4>
+`module.exports.web3 = web3`
+
+`module.exports.toEther = toEther`
+
+utils.js:
+
+`module.exports = { args, CheckOptionExist }`
+
+### more intresting:
 
 deploy.js - `node ./deploy.js --con <ContractName>`
 

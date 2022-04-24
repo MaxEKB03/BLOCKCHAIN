@@ -6,7 +6,9 @@
 	"scripts": {
 		"geth-console": "cd geth && console.bat",
 		"geth-init": "cd geth && init.bat",
-		"geth-run": "cd geth && run.bat"
+		"geth-run": "cd geth && run.bat",
+		"new-account": "cd geth && geth -datadir data account new",
+		"get-ip": "node ./scripts/getIp.js"
 	},
 	"keywords": [],
 	"author": "",
