@@ -1,6 +1,6 @@
 {
 	"config": {
-		"chainId": 2304,
+		"chainId": 2222,
 		"homesteadBlock": 0,
 		"constantinopleBlock": 0,
 		"byzantiumBlock": 0,
@@ -11,5 +11,9 @@
 	},
 	"difficulty": "0",
 	"gasLimit": "8000000",
-	"alloc": {}
+	"alloc": {
+		"0x95E8761FEdcd32F2c52743Ce162D06E5206614f1": { "balance": "10000000000000000000" },
+		"0x38A5f60e99EbBA1eEcFcD90c11CC835d71F3EB66": { "balance": "10000000000000000000" },
+		"0x869ceAD07C310172Bf2aAB5e8a8F423c14A15e6e": { "balance": "10000000000000000000" }
+	}
 }

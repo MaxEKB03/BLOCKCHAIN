@@ -51,6 +51,8 @@ contract Swapper {
         uint amount1 = swaps[swapId].amount[owner1];
         uint amount2 = swaps[swapId].amount[owner2];
 
+        require(swaps[swapId].approve[owner1], "Owner1 doesn't allowed swap");
+        require(swaps[swapId].approve[owner2], "Owner2 doesn't allowed swap");
         require(token1.allowance(owner1, address(this)) >= amount1, "Owner1's allowance is lower than sad");
         require(token2.allowance(owner2, address(this)) >= amount2, "Owner2's allowance is lower than sad");
 
@@ -59,5 +61,17 @@ contract Swapper {
 
         token1.transfer(owner2, amount1);
         token2.transfer(owner1, amount2);
+    }
+
+    function GetSwapInfo(uint swapId) public view returns(
+        address owner1, address owner2, 
+        IERC20 token1, IERC20 token2, 
+        uint amount1, uint amount2
+        ){
+        return (
+            swaps[swapId].owner1, swaps[swapId].owner1,
+            swaps[swapId].token[swaps[swapId].owner1], swaps[swapId].token[swaps[swapId].owner2],
+            swaps[swapId].amount[swaps[swapId].owner1], swaps[swapId].amount[swaps[swapId].owner2]
+        );
     }
 }

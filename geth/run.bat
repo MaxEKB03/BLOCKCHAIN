@@ -1,2 +1,2 @@
 set /p ip=<..\ip.txt
-geth -datadir data -networkid 2304 --http --http.addr %ip% --http.port 8545 --http.api "web3,eth,personal,admin,net" --http.corsdomain "*" --mine --miner.threads 1 --allow-insecure-unlock
+geth -datadir data -networkid 2222 --http --http.addr %ip% --http.port 8545 --http.api "web3,eth,personal,admin,net" --http.corsdomain "*" --mine --miner.threads 1 --allow-insecure-unlock
