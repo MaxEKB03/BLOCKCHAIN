@@ -4,3 +4,5 @@ node_modules
 geth/data
 ip.txt
 package-lock.json
+artifacts
+.vscode

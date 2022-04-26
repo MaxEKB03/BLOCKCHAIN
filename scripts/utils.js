@@ -3,7 +3,7 @@ const args = require('minimist')(process.argv.splice(2))
 function CheckOptionExist(...options) {
 	options.forEach((option) => {
 		if (!(option in args)) {
-			console.log(args)
+			console.log(option)
 			throw new Error(`Option --"${option}" is absent`)
 		}
 	})

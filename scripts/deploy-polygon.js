@@ -8,9 +8,9 @@ Deploy()
 
 async function Deploy() {
 	let hash, receipt
-
-	const address = (await web3.eth.getAccounts())[0]
-	await web3.eth.personal.unlockAccount(address, '1111')
+	const address = '0x95E8761FEdcd32F2c52743Ce162D06E5206614f1'
+	// const address = (await web3.eth.getAccounts())[0]
+	// await web3.eth.personal.unlockAccount(address, '1111')
 	let contract = new web3.eth.Contract(data.abi)
 	await contract.deploy({ data: data.bytecode }).send({ from: address }, function (err, thash) {
 		hash = thash
