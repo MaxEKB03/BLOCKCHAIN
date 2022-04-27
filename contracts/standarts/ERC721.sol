@@ -2,11 +2,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0;
 
-import "../interfaces/IERC721.sol";
-import "../interfaces/IERC721Receiver.sol";
+import "@openzeppelin/contracts/interfaces/IERC721.sol";
+import "@openzeppelin/contracts/interfaces/IERC721Receiver.sol";
 import "./ERC165.sol";
-import "../libraries/Address.sol";
-import "../libraries/SafeMath.sol";
+import "@openzeppelin/contracts/utils/Address.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
 contract ERC721 is ERC165, IERC721 {
 
