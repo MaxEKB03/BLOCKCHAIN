@@ -49,17 +49,17 @@ contract ERC721 is ERC165, IERC721 {
         return owner;
     }
 
-    function safeTransferFrom(address _from, address _to, uint256 _tokenId) public virtual payable{
+    function safeTransferFrom(address _from, address _to, uint256 _tokenId) public virtual{
         safeTransferFrom(_from, _to, _tokenId, "");
     }
 
-    function safeTransferFrom(address _from, address _to, uint256 _tokenId, bytes memory data) public virtual payable{
+    function safeTransferFrom(address _from, address _to, uint256 _tokenId, bytes memory data) public virtual{
         transferFrom(_from, _to, _tokenId);
         // solium-disable-next-line arg-overflow
         require(_checkOnERC721Received(_from, _to, _tokenId, data));
     }
 
-    function transferFrom(address _from, address _to, uint256 _tokenId) public virtual payable{
+    function transferFrom(address _from, address _to, uint256 _tokenId) public virtual{
         require(isApprovedOrOwner(msg.sender, _tokenId));
         require(_to != address(0));
 
@@ -70,7 +70,7 @@ contract ERC721 is ERC165, IERC721 {
         emit Transfer(_from, _to, _tokenId);
     }
 
-    function approve(address _approved, uint256 _tokenId) public virtual payable{
+    function approve(address _approved, uint256 _tokenId) public virtual{
         address owner = ownerOf(_tokenId);
         require(_approved != owner);
         require(msg.sender == owner || isApprovedForAll(owner, msg.sender));

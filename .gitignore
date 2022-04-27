@@ -1,5 +1,6 @@
 gui
 bin
+build
 node_modules
 geth/data
 ip.txt

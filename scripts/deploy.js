@@ -18,7 +18,7 @@ async function Deploy() {
 	receipt = await web3.eth.getTransactionReceipt(hash)
 	console.log(receipt.contractAddress)
 	writeFileSync(
-		`../bin/deployed/${args.con}.json`,
+		`../build/deployed/${args.con}.json`,
 		JSON.stringify({ conAddr: receipt.contractAddress, conName: args.con, abi: data.abi, data: data.bytecode })
 	)
 }
