@@ -1,0 +1,2 @@
+geth --datadir data init ./genesis.json
+geth --datadir data --networkid 1000 --http --http.addr $ip --http.port $port --http.api "web3,eth,personal,admin,net" --http.corsdomain "*" --allow-insecure-unlock

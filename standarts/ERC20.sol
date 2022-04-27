@@ -7,7 +7,8 @@ contract ERC20 is IERC20 {
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (address => uint256) public balances;
     mapping (address => mapping (address => uint256)) public allowed;
-    uint256 public totalSupply;
+    uint256 public override totalSupply;
+
     /*
     NOTE:
     The following variables are OPTIONAL vanities. One does not have to include them.

@@ -1,0 +1,16 @@
+FROM ubuntu:20.04
+
+COPY distr /home/eth
+
+ENV ip="0.0.0.0"
+EXPOSE 8545
+
+RUN adduser eth --disabled-login --gecos ""
+RUN apt-get update && apt-get install --yes software-properties-common
+RUN add-apt-repository ppa:ethereum/ethereum
+RUN apt-get install --yes ethereum
+RUN apt-get install nano
+
+WORKDIR /home/eth
+
+CMD bash
